@@ -135,8 +135,6 @@ ul{
 
 .thicker-grey-bg {
 	background-color: #dfdfdf;
-	border-radius: 80px;
-	display: inline-block;
 }
 
 .space-tabs .nav-pills .nav-link{
@@ -157,4 +155,33 @@ ul{
 
 .single-space-amenities li:first-child{
 	border-top: 1px solid #eee;
+}
+
+.check-into-hold{
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.check-into-hold .img-space-thumb{
+	overflow:hidden;
+	position: relative;
+	height: 150px;
+}
+
+.check-into-hold .img-space-thumb img{
+	width: 200%;
+}
+
+.check-into-hold .space-det{
+	padding: 20px 20px 0px;
+	text-align: left;
+	color: #444;
+}
+
+.check-into-hold .space-det .space-name{
+	font-weight: 600;
+}
+.star{
+	opacity: 0.5;
 }

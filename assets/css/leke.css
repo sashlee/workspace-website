@@ -13,3 +13,6 @@
     align-items: center;
     justify-content: center;
 }
+.top{
+	margin-top: -50px;
+}

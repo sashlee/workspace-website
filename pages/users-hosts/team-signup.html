@@ -7,7 +7,7 @@
     <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="description" content="Damier Spaces - Enjoy frictionless daily access to the best workspaces near you!">
     <meta name="author" content="Nativebrands">
-    <title>Host Bank Details – Damier Spaces</title>
+    <title>Group Sign Up – Damier Spaces</title>
     <link rel=icon href=../../assets/img/brand/favicon.png type=image/png>
     <link rel=stylesheet href=../../assets/css/damier-spaces.css id=stylesheet>
 </head>
@@ -67,7 +67,7 @@
 <!-- /Header Ends -->
 
 <section>
-    <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center><img src=../../assets/img/host-bank.png alt=Image class=img-as-bg>
+    <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center><img src=../../assets/img/user-signup.png alt=Image class=img-as-bg>
     </div>
     <div class="container-fluid d-flex flex-column">
         <div class="row align-items-center justify-content-center justify-content-lg-end min-vh-100">
@@ -75,39 +75,60 @@
                 <div class="row justify-content-center">
                     <div class="col-11 col-lg-10 col-xl-6">
                         <div>
-                            <div class=mb-5>
+                            <div class="mb-5 mt-5">
                                 <div class="text-center">
-                                    <h6 class="h3 mb-1">Bank Information</h6>
-                                    <p class="text-muted mb-30">Enter your bank details.<br>This is where payments will be made to you.</p>
+                                    <h6 class="h3 mb-1">Create an account</h6>
+                                    <p class="text-muted mb-0">Complete your information in the form below.</p>
                                 </div>
                                 
-                            </div>
+                            </div><span class=clearfix></span>
                             <form>
                                 <div class=form-group>
-                                    <label class=form-control-label>Select a Bank:</label>
+                                    <label class=form-control-label>Team Name:</label>
                                     <div class="input-group input-group-merge">
-                                        <select name="" id="input" class="form-control" required="required">
-                                            <option value="">GTBank</option>
-                                        </select>
+                                        <input type=text class="form-control form-control-prepend" placeholder="e.g: Acme Team">
+                                        <div class=input-group-prepend><span class=input-group-text><i data-feather=grid></i></span></div>
                                     </div>
                                 </div>
                                 <div class=form-group>
-                                    <label class=form-control-label>Account Name:</label>
-                                    <div class="input-group input-group-merge">
-                                        <input type="text" name="" id="input" class="form-control" value="" placeholder="Workstation Nigeria">
+                                    <label class=form-control-label>Email Address:</label>
+                                    <div class="input-group input-group-merge" data-toggle="tooltip" data-placement="top" title="This will be the company's email account.">
+                                        <input type=email class="form-control form-control-prepend" id=input-email placeholder="company@email.com">
+                                        <div class=input-group-prepend><span class=input-group-text><i data-feather=mail></i></span></div>
                                     </div>
                                 </div>
                                 <div class=form-group>
-                                    <label class=form-control-label>Account Number:</label>
+                                    <label class=form-control-label>Phone Number:</label>
                                     <div class="input-group input-group-merge">
-                                        <input type="text" name="" id="input" class="form-control" value="" placeholder="0123456789">
+                                        <input type=email class="form-control form-control-prepend" id=input-email placeholder="e.g: +2348098765432">
+                                        <div class=input-group-prepend><span class=input-group-text><i data-feather=phone></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class=form-group>
+                                            <label class=form-control-label>Password:</label>
+                                            <div class="input-group input-group-merge">
+                                                <input type=email class="form-control form-control-prepend" id=input-email placeholder="******">
+                                                <div class=input-group-prepend><span class=input-group-text><i data-feather=lock></i></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class=form-group>
+                                            <label class=form-control-label>Confirm Password:</label>
+                                            <div class="input-group input-group-merge">
+                                                <input type=email class="form-control form-control-prepend" id=input-email placeholder="******">
+                                                <div class=input-group-prepend><span class=input-group-text><i data-feather=lock></i></span></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class=mt-4>
-                                    <a href="host-verification.html" class="btn btn-primary">Back</a>
-                                    <a href="host-created.html" class="btn btn-primary">Finish</a>
+                                    <a href=team-created.html class="btn btn-block btn-primary">Continue</a>
                                 </div>
                             </form>
+                            <div class="mt-4 text-center"><small>Already a User?</small> <a href=login.html class="small font-weight-bold">Continue to Login</a></div>
                         </div>
                     </div>
                 </div>

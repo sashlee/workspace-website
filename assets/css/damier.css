@@ -98,7 +98,7 @@ ul{
 }
 
 .account-choose.host{
-	background: url(../../assets/img/host.png) no-repeat;
+	background: url(../../assets/img/host-cac.png) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -554,3 +554,7 @@ ul{
   background-color: #830900;
   background-position: center;
 }
+
+
+/*Updates*/
+

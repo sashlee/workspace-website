@@ -18,7 +18,7 @@
 		<nav class="navbar navbar-main navbar-expand-lg" id=navbar-main>
 			<div class=container>
 				<a class=navbar-brand href=index.html><img alt="Image placeholder" src=../../assets/img/brand/dark.svg id=navbar-logo> </a>
-				<button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><span class=navbar-toggler-icon></span></button>
+				<button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><span class=navbar-toggler-icon></span><i class="fa fa-bars"></i></button>
 				<div class="collapse navbar-collapse navbar-collapse-overlay" id=navbar-main-collapse>
 					<div class=position-relative>
 						<button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><i data-feather=x></i></button>
@@ -57,9 +57,9 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
-						<li class=nav-item><a href=../users-hosts/create-account.html class="btn btn-sm btn-primary btn-icon ml-3"><span class=btn-inner--icon><i data-feather=user></i></span> <span class=btn-inner--text>Account</span></a></li>
+						<li class=nav-item><a href=../users-hosts/login.html class="btn btn-sm btn-primary btn-icon ml-3"><span class=btn-inner--icon><i data-feather=user></i></span> <span class=btn-inner--text>Account</span></a></li>
 					</ul>
-					<div class="d-lg-none px-4 text-center"><a href=../users-hosts/create-account.html class="btn btn-block btn-sm btn-primary"><span class=btn-inner--icon><i data-feather=user></i></span> Account</a></div>
+					<div class="d-lg-none px-4 text-center"><a href=../users-hosts/login.html class="btn btn-block btn-sm btn-primary"><span class=btn-inner--icon><i data-feather=user></i></span> Account</a></div>
 				</div>
 			</div>
 		</nav>
@@ -193,7 +193,26 @@
 			<div class="container">
 				<div class="text-center">
 					<div class="pt-5"><h1 class="display-6 font-weight-bolder mb-3 text-dark">Features</h1></div>
+
+					<ul class="nav nav-tabs justify-content-center mb-5" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active text-dark" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i data-feather=user></i> For Individuals</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i data-feather=grid></i> For Teams</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								Individual Here
+							</div>
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								Team Here
+							</div>
+						</div>
+
 					<div class="row">
+
 						<div class="col text-left">
 							<ul>
 								<li class="float-left">

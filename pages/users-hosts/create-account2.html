@@ -7,7 +7,7 @@
     <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="description" content="Damier Spaces - Enjoy frictionless daily access to the best workspaces near you!">
     <meta name="author" content="Nativebrands">
-    <title>Host Bank Details – Damier Spaces</title>
+    <title>Login – Damier Spaces</title>
     <link rel=icon href=../../assets/img/brand/favicon.png type=image/png>
     <link rel=stylesheet href=../../assets/css/damier-spaces.css id=stylesheet>
 </head>
@@ -67,7 +67,7 @@
 <!-- /Header Ends -->
 
 <section>
-    <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center><img src=../../assets/img/host-bank.png alt=Image class=img-as-bg>
+    <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center><img src=../../assets/img/login-bg.png alt=Image class=img-as-bg>
     </div>
     <div class="container-fluid d-flex flex-column">
         <div class="row align-items-center justify-content-center justify-content-lg-end min-vh-100">
@@ -76,38 +76,34 @@
                     <div class="col-11 col-lg-10 col-xl-6">
                         <div>
                             <div class=mb-5>
-                                <div class="text-center">
-                                    <h6 class="h3 mb-1">Bank Information</h6>
-                                    <p class="text-muted mb-30">Enter your bank details.<br>This is where payments will be made to you.</p>
-                                </div>
-                                
-                            </div>
+                                <h6 class="h3 mb-1">Welcome back!</h6>
+                                <p class="text-muted mb-0">Sign in to your account to continue.</p>
+                            </div><span class=clearfix></span>
                             <form>
                                 <div class=form-group>
-                                    <label class=form-control-label>Select a Bank:</label>
+                                    <label class=form-control-label>Email address</label>
                                     <div class="input-group input-group-merge">
-                                        <select name="" id="input" class="form-control" required="required">
-                                            <option value="">GTBank</option>
-                                        </select>
+                                        <input type=email class="form-control form-control-prepend" id=input-email placeholder="Example: bosunjones@mail.com">
+                                        <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
                                     </div>
                                 </div>
-                                <div class=form-group>
-                                    <label class=form-control-label>Account Name:</label>
-                                    <div class="input-group input-group-merge">
-                                        <input type="text" name="" id="input" class="form-control" value="" placeholder="Workstation Nigeria">
+                                <div class="form-group mb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <label class=form-control-label>Password</label>
+                                        </div>
+                                        <div class=mb-2><a href=# class="small text-muted text-underline--dashed border-primary" data-toggle="modal" data-target="#forgot-password">Forgot Password?</a></div>
                                     </div>
-                                </div>
-                                <div class=form-group>
-                                    <label class=form-control-label>Account Number:</label>
                                     <div class="input-group input-group-merge">
-                                        <input type="text" name="" id="input" class="form-control" value="" placeholder="0123456789">
+                                        <input type=password class="form-control form-control-prepend" id=input-password placeholder=Password>
+                                        <div class=input-group-prepend><span class=input-group-text><i data-feather=key></i></span></div>
                                     </div>
                                 </div>
                                 <div class=mt-4>
-                                    <a href="host-verification.html" class="btn btn-primary">Back</a>
-                                    <a href="host-created.html" class="btn btn-primary">Finish</a>
+                                    <button type=button class="btn btn-block btn-primary" data-toggle="modal" data-target="#select-dashboard">Sign in</button>
                                 </div>
                             </form>
+                            <div class=mt-4><small>Not registered?</small> <a href=user-signup.html class="small font-weight-bold">Create account</a></div>
                         </div>
                     </div>
                 </div>
@@ -156,8 +152,26 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="button" class="btn btn-primary w-100">Submit</button>
+                    <a href="reset-password.html" class="btn btn-primary w-100">Submit</a>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sign In -->
+<div class="modal fade" id="select-dashboard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Dashboard</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <a href="../../../damier-spaces-user-dashboard/application/users(active)/dashboard.html" class="btn btn-primary">User Dashboard</a>
+                <a href="../../../damier-spaces-user-dashboard/application/hosts(all-activities)/dashboard.html" class="btn btn-primary">Host Dashboard</a>
             </div>
         </div>
     </div>
